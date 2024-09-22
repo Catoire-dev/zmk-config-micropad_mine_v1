@@ -21,7 +21,7 @@
 
         game_layer {
             bindings = <
-&kp LCTRL  &kp LEFT_SHIFT  &kp TAB  &kp X
+&kp LCTRL  &kp LEFT_SHIFT  &kp TAB  &kp ESCAPE
 &kp P      &kp A           &kp Q    &kp NUMBER_1
 &to 0      &kp S           &kp W    &kp NUMBER_2
 &kp B      &kp D           &kp E    &kp NUMBER_3
