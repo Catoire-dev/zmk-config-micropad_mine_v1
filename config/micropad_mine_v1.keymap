@@ -21,12 +21,12 @@
 
         game_layer {
             bindings = <
-&kp R         &kp F    &kp G       &kp SPACE
-&kp NUMBER_4  &kp E    &kp D       &kp B
-&kp NUMBER_3  &kp W    &kp S       &to L_NUMPAD
-&kp NUMBER_2  &kp Q    &kp A       &kp X
-&kp NUMBER_1  &kp TAB  &kp LSHIFT  &kp LCTRL
-&kp A
+&kp LCTRL  &kp LEFT_SHIFT  &kp TAB  &kp NUMBER_1
+&kp P      &kp A           &kp Q    &kp NUMBER_2
+&to 0      &kp S           &kp W    &kp NUMBER_3
+&kp B      &kp D           &kp E    &kp NUMBER_4
+&kp SPACE  &kp G           &kp F    &kp R
+&none
             >;
         };
     };
