@@ -1,0 +1,6 @@
+if SHIELD_MICROPAD_MINE_V1
+
+config ZMK_KEYBOARD_NAME
+    default "micropad_mine_v1"
+
+endif

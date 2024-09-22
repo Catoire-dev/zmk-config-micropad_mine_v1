@@ -1,0 +1,2 @@
+config SHIELD_MICROPAD_MINE_V1
+    def_bool $(shields_list_contains,micropad_mine_v1)
