@@ -9,9 +9,38 @@
         e_acc_aigue: e_acc_aigue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>, <&macro_press>;
+            bindings =
+                <&kp LA(N0) &kp LA(N2) &kp LA(NUMBER_3) &kp LA(N3)>,
+                <&macro_press>;
 
             label = "E_ACC_AIGUE";
+        };
+
+        e_acc_grave: e_acc_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N2)>,
+                <&macro_tap>;
+
+            label = "E_ACC_GRAVE";
+        };
+
+        e_acc_chap: e_acc_chap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N4)>,
+                <&macro_release>;
+
+            label = "E_ACC_CHAP";
+        };
+
+        c_cedil: c_cedil {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp N0 &kp N2 &kp N3 &kp N1>;
+            label = "C_CEDIL";
         };
     };
 
@@ -40,13 +69,13 @@
             >;
         };
 
-        layer_2 {
+        accent {
             bindings = <
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
+&e_acc_aigue  &e_acc_grave  &e_acc_chap  &c_cedil
+&trans        &trans        &trans       &trans
+&trans        &trans        &trans       &trans
+&trans        &trans        &trans       &trans
+&trans        &trans        &trans       &trans
 &trans
             >;
         };
