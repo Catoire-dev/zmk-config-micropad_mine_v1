@@ -5,28 +5,49 @@
 #define L_GAME    1
 
 / {
+    macros {
+        e_acc_aigue: e_acc_aigue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>;
+
+            label = "E_ACC_AIGUE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-&kp EQUAL     &kp SLASH     &kp ASTERISK  &kp MINUS
-&kp N7        &kp N8        &kp N9        &kp PLUS
-&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_PARENTHESIS
-&kp N0        &to L_GAME    &kp DOT       &kp ENTER
-&kp A
-            >;
-        };
 
         game_layer {
             bindings = <
 &kp LCTRL  &kp LEFT_SHIFT  &kp TAB  &kp ESCAPE
 &kp P      &kp A           &kp Q    &kp NUMBER_1
-&to 0      &kp S           &kp W    &kp NUMBER_2
+&to 1      &kp S           &kp W    &kp NUMBER_2
 &kp B      &kp D           &kp E    &kp NUMBER_3
 &kp SPACE  &kp F           &kp R    &kp NUMBER_4
 &none
+            >;
+        };
+
+        numpad {
+            bindings = <
+&kp EQUAL     &kp SLASH     &kp ASTERISK  &kp MINUS
+&kp N7        &kp N8        &kp N9        &kp PLUS
+&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_PARENTHESIS
+&kp N0        &to 0         &kp DOT       &kp ENTER
+&kp A
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+&trans
             >;
         };
     };
