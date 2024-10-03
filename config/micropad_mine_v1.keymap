@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define L_NUMPAD  0
 #define L_GAME    1
@@ -9,37 +10,28 @@
         e_acc_aigue: e_acc_aigue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(N0) &kp LA(N2) &kp LA(NUMBER_3) &kp LA(N3)>,
-                <&macro_press>;
-
+            bindings = <&kp N0 &kp N2 &kp NUMBER_3 &kp N3>;
             label = "E_ACC_AIGUE";
         };
 
         e_acc_grave: e_acc_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N2)>,
-                <&macro_tap>;
-
+            bindings = <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N2)>;
             label = "E_ACC_GRAVE";
         };
 
         e_acc_chap: e_acc_chap {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N4)>,
-                <&macro_release>;
-
+            bindings = <&kp LA(N0) &kp LA(N2) &kp LA(N3) &kp LA(N4)>;
             label = "E_ACC_CHAP";
         };
 
         c_cedil: c_cedil {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp N0 &kp N2 &kp N3 &kp N1>;
+            bindings = <&kt LEFT_ALT &kp N0 &kp N2 &kp N3 &kp N1 &kt LEFT_ALT>;
             label = "C_CEDIL";
         };
     };
