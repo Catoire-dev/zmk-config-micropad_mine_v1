@@ -31,7 +31,7 @@
         c_cedil: c_cedil {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp N0 &kp N2 &kp N3 &kp N1 &kt LEFT_ALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kt LEFT_ALT>;
             label = "C_CEDIL";
         };
     };
