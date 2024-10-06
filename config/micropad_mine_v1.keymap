@@ -65,7 +65,7 @@
             bindings = <
 &e_acc_aigue  &e_acc_grave  &e_acc_chap  &c_cedil
 &trans        &trans        &trans       &trans
-&trans        &trans        &trans       &trans
+&to 0         &trans        &trans       &trans
 &trans        &trans        &trans       &trans
 &trans        &trans        &trans       &trans
 &trans
