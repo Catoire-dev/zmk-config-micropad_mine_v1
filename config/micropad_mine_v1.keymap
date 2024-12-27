@@ -45,8 +45,8 @@
 &kp P         &kp A           &kp Q    &kp NUMBER_1
 &mo 1         &kp S           &kp W    &kp NUMBER_2
 &kp B         &kp D           &kp E    &kp NUMBER_3
-&kp SPACE     &kp F           &kp R    &kp NUMBER_4
-&kp LEFT_ALT
+&kp LEFT_ALT  &kp F           &kp R    &kp NUMBER_4
+&kp SPACE
             >;
         };
 
